@@ -66,6 +66,7 @@ router.put('/:id', isAuth, isAdmin, async (req, res) => {
     product.countInStock = req.body.countInStock;
     product.description = req.body.description;
     const updatedProduct = await product.save();
+    
     if (updatedProduct) {
       return res
         .status(200)
