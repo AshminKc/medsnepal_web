@@ -11,6 +11,8 @@ uploads/*.png
 /.pnp
 .pnp.js
 
+frontend/
+
 # testing
 /coverage
 
